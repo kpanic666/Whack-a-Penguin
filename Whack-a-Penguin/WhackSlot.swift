@@ -45,6 +45,9 @@ class WhackSlot: SKNode {
             charNode.name = "charEnemy"
         }
         
+        charNode.xScale = 1
+        charNode.yScale = 1
+        
         charNode.run(SKAction.moveBy(x: 0, y: 80, duration: 0.05))
         
         DispatchQueue.main.asyncAfter(deadline: .now() + (hideTime * 3.5)) { [weak self] in
@@ -69,5 +72,19 @@ class WhackSlot: SKNode {
         }
         
         charNode.run(SKAction.sequence([delay, hide, notVisible]))
+        
+        if let smokeEffect = SKEmitterNode(fileNamed: "smoke") {
+            smokeEffect.position = CGPoint(x: 0, y: 65)
+            smokeEffect.numParticlesToEmit = 2
+            
+            let startEmitter = SKAction.run { [unowned self] in
+                self.addChild(smokeEffect)
+            }
+            let emitterDelay = SKAction.wait(forDuration: 3)
+            let deleteEmitter = SKAction.run {
+                smokeEffect.removeFromParent()
+            }
+            run(SKAction.sequence([startEmitter, emitterDelay, deleteEmitter]))
+        }
     }
 }
