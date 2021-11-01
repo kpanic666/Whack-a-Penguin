@@ -22,6 +22,7 @@
 		E96A6577272F1FD500DE98AA /* penguinGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E96A656F272F1FD500DE98AA /* penguinGood@2x.png */; };
 		E96A6578272F1FD500DE98AA /* whackMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E96A6570272F1FD500DE98AA /* whackMask@2x.png */; };
 		E96A6579272F1FD500DE98AA /* whackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E96A6571272F1FD500DE98AA /* whackBackground@2x.png */; };
+		E96A659B272FFE7B00DE98AA /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96A659A272FFE7B00DE98AA /* WhackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E96A656F272F1FD500DE98AA /* penguinGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "penguinGood@2x.png"; sourceTree = "<group>"; };
 		E96A6570272F1FD500DE98AA /* whackMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackMask@2x.png"; sourceTree = "<group>"; };
 		E96A6571272F1FD500DE98AA /* whackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackBackground@2x.png"; sourceTree = "<group>"; };
+		E96A659A272FFE7B00DE98AA /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				E96A6554272F1EA500DE98AA /* GameScene.sks */,
 				E96A6558272F1EA500DE98AA /* GameScene.swift */,
 				E96A655A272F1EA500DE98AA /* GameViewController.swift */,
+				E96A659A272FFE7B00DE98AA /* WhackSlot.swift */,
 				E96A655C272F1EA500DE98AA /* Main.storyboard */,
 				E96A655F272F1EA500DE98AA /* Assets.xcassets */,
 				E96A6561272F1EA500DE98AA /* LaunchScreen.storyboard */,
@@ -182,6 +185,7 @@
 			files = (
 				E96A6559272F1EA500DE98AA /* GameScene.swift in Sources */,
 				E96A655B272F1EA500DE98AA /* GameViewController.swift in Sources */,
+				E96A659B272FFE7B00DE98AA /* WhackSlot.swift in Sources */,
 				E96A6553272F1EA500DE98AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
